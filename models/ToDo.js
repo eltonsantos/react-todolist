@@ -1,9 +1,9 @@
-const { Schema, models } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const ToDoSchema = new Schema({
   user: { type: Schema.Types.ObjectId, ref: "User"},
   content: { type: String, require: true },
-  complete: { type: Boolena, default: false },
+  complete: { type: Boolean, default: false },
   completeAt: { type: Date }
 }, {
   timestamps: true
