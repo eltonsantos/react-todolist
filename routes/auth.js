@@ -15,7 +15,7 @@ router.post("/register", async (req, res) => {
 
     const { errors, isValid } = validateRegisterInput(req.body);
 
-    if (isValid) {
+    if (!isValid) {
       return res.status(400).json(errors);
     }
 
@@ -45,7 +45,6 @@ router.post("/register", async (req, res) => {
     res.status(500).send(err.message);
   }
 })
-
 
 router.post("/login", async (req, res) => {
   try {
