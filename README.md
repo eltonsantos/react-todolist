@@ -59,6 +59,7 @@ A simple project of a ToDo list. The project separates the front from the backen
 
 - [ ] Cobrir o sistema de testes! 👁‍🗨
 - [ ] Criar uma busca da lista de tarefas 🔎
+- [ ] Alterar visual em dark/light mode
 - [ ] E muito mais... ❤💪🏼
 
 ---
